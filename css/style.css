@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.small { font: italic 13px sans-serif; }
+.heavy { font: bold;
+  font-size: 5em;
+  font-style: italic; }
+.Rrrrr { font: italic 40px serif; fill: red; }
+
+
+html, body {
+  height: 100%;
+}
+a{
+  display: inline-block;
+}
+.header{
+    display:block;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+}
+
+body {
+  background: #001FBA;
+  height: 100%;
+}
+
+object{
+  pointer-events: none;
+}
+svg {
+  display: block;
+  margin: auto;
+  position: fixed;
+  top: -10%;
+  height: 100%;
+  left: 0%;
+  width: 100%;
+}
+
+#ag{
+  top:5vh;
+  height: 90%;
+}
+
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+
+.one {
+        flex: 1;
+      }
+
+      .two {
+        flex: 2;
+      }
+
+      .three {
+        flex: 3;
+      }
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+.flex-grid h2 {
+  font-size: 10em;
+  color:white;
+}
+
+.st:hover{
+  fill: black;
+  box-shadow: 2px 2px 150px 150px rgba(255, 255, 0, 1);
+ /* filter: url(#svgBlur); */
+}
+
+
+.st{
+  fill:white;
+  transition: 400ms;
+  animation: breathe 9s infinite ease-in-out;
+transition-timing-function: ease-in-out;
+-webkit-transition: 400ms;
+-webkit-transition-timing-function: ease-in-out;
+}
+
+.ss{
+  fill:white;
+  transition: 400ms;
+transition-timing-function: ease-in-out;
+-webkit-transition: 400ms;
+-webkit-transition-timing-function: ease-in-out;
+}
+.ss:hover{
+    fill: yellow;
+    box-shadow: 2px 2px 150px 150px rgba(255, 255, 0, 1);
+    filter: url(#svgBlur);
+
+}
+
+
+@keyframes breathe{
+  50%{
+    transform: scale(0.99);
+    transform-origin: 0% 0%;
+  }
+}
+.example1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  font-size: 5vh;
+  color: white;
+
+}
+
+.example2 {
+  position: fixed;
+  left: 0;
+  bottom: 5vh;
+  width: 100%;
+  height: 5vh;
+  font-size: 5vh;
+  color: white;
+
+}
+
+
+
+
+/*
+@keyframes st {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(0.3);
+    }
+}
+  #star1 {
+      animation: st 5s ease-in-out infinite alternate;
+      -webkit-animation: st 5s ease-in-out infinite alternate;
+  } */
