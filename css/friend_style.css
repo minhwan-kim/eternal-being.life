@@ -43,11 +43,11 @@ body {
   margin-top: -1%;
   width: 70%;
 
-  -webkit-animation: blink 2.6s;
+  -webkit-animation: blink 3.6s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation: blink 2.6s;
+  -moz-animation: blink 3.6s;
   -moz-animation-iteration-count: infinite;
-  -o-animation: blink 2.6s;
+  -o-animation: blink 3.6s;
   -o-animation-iteration-count: infinite;
 
 }
@@ -126,13 +126,13 @@ body {
   line-height: 92%;
   font-family: 'alluraregular';
 
-  -webkit-animation: blink 2.6s;
+  -webkit-animation: blink 3.6s;
   -webkit-animation-iteration-count: infinite;
-  -moz-animation: blink 2.6s;
+  -moz-animation: blink 3.6s;
   -moz-animation-iteration-count: infinite;
-  -o-animation: blink 2.6s;
+  -o-animation: blink 3.6s;
   -o-animation-iteration-count: infinite;
-  animation-delay: -1.3s;
+  animation-delay: -1.8s;
 
 }
 
@@ -146,5 +146,20 @@ body {
 
 }
 .a3{
+  grid-column: 1/12;
+  grid-row: 3;
+  margin-left: 5%;
+  margin-right: 10%;
+  font-size: 2em;
+  line-height: 92%;
+  font-family: 'alluraregular';
+  text-align: center;
 
+  -webkit-animation: blink 3.6s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: blink 3.6s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: blink 3.6s;
+  -o-animation-iteration-count: infinite;
+  animation-delay: -1.8s;
 }
