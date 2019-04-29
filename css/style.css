@@ -16,6 +16,33 @@ html, body {
 a{
   display: inline-block;
 }
+#main_text{
+  position: fixed;
+  display:none;
+  top: 3%;
+  left: 20%;
+  width:38%;
+  font-size: 0.22em;
+  color: white;
+  z-index: -100;
+    font-family: 'samsungone400';
+
+}
+
+
+#main_text_kr{
+
+  position: fixed;
+  z-index: -100;
+  top: 3%;
+  left: 60%;
+  width:36%;
+  font-size: 0.20em;
+  color: white;
+  display: none;
+    font-family: 'samsungone400';
+
+}
 
 .center {
   display: block;
@@ -165,6 +192,15 @@ transition-timing-function: ease-in-out;
 -webkit-transition-timing-function: ease-in-out;
 }
 
+
+
+.st:hover{
+  fill: black;
+  box-shadow: 2px 2px 150px 150px rgba(255, 255, 0, 1);
+ /* filter: url(#svgBlur); */
+}
+
+
 .ss{
   fill:white;
   transition: 400ms;
@@ -180,11 +216,6 @@ transition-timing-function: ease-in-out;
 }
 
 
-.st:hover{
-  fill: black;
-  box-shadow: 2px 2px 150px 150px rgba(255, 255, 0, 1);
- /* filter: url(#svgBlur); */
-}
 
 
 #cont1:hover + #a { background-color: yellow; }
@@ -230,6 +261,83 @@ transition-timing-function: ease-in-out;
     z-index: -100;
 
 }
+
+
+.example4 {
+  position: fixed;
+  bottom:-6vh;
+  width: 100%;
+  font-size: 10vh;
+  color: white;
+    z-index: -100;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+nav a {
+  transition: .1s all ease-out;
+  -webkit-transition: .1s all ease-out;
+  -moz-transition: .1s all ease-out;
+  -o-transition: .1s all ease-out;
+}
+
+nav.main a.home,
+nav.back a.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+
+nav.back a.home {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+.lightbox { display: none; }
 
 .blinking{
     animation:blinkingText 5s infinite;

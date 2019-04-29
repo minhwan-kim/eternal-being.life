@@ -16,5 +16,27 @@
          url('suisseintl-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'samsungone400';
+    src: url('samsungone-400-webfont.woff2') format('woff2'),
+         url('samsungone-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'samsungone700';
+    src: url('samsungone-700-webfont.woff2') format('woff2'),
+         url('samsungone-700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }

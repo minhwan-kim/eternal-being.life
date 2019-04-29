@@ -1,0 +1,202 @@
+html, * {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001fba+0,ffffff+37,ffffff+65,001fba+100 */
+background: #001fba; /* Old browsers */
+
+}
+
+
+nav a {
+  transition: .1s all ease-out;
+  -webkit-transition: .1s all ease-out;
+  -moz-transition: .1s all ease-out;
+  -o-transition: .1s all ease-out;
+}
+
+nav.main a.home,
+nav.back a.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+
+nav.back a.home {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+
+.box1 {
+  display: block;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.rotate {
+  text-align: left;
+  line-height: 90%;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-size: 32px;
+
+/* Safari */
+-webkit-transform: rotate(-45deg);
+
+/* Firefox */
+-moz-transform: rotate(-45deg);
+
+/* IE */
+-ms-transform: rotate(-45deg);
+
+/* Opera */
+-o-transform: rotate(-45deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+
+.box {
+  /* border: 2px solid #ffa94d; */
+  border-radius: 5px;
+  /* background-color: #ffd8a8; */
+  padding: 1em;
+  color: #fff30f;
+    font-family: 'impact_nieuw2016_italic';
+}
+
+.gallery__img {
+  width: 70%;
+  height: 1fr/3;
+  object-fit: cover;
+}
+
+.hover07 figure img {
+	-webkit-filter: blur(25px);
+	filter: blur(25px);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.hover07 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+
+}
+
+.column {
+	margin: 0;
+	padding: 0;
+}
+
+.spin1{
+
+            -webkit-animation:spin 20s linear infinite;
+            -moz-animation:spin 20s linear infinite;
+            animation:spin 20s linear infinite;
+}
+
+.spin2{
+
+            -webkit-animation:spin2 13s linear infinite;
+            -moz-animation:spin2 13s linear infinite;
+            animation:spin2 13s linear infinite;
+}
+
+figure {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 5px;
+	/* background: #fff; */
+	overflow: hidden;
+
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate3d(0,1,1,360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate3d(0,1,1,360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate3d(0,1,1,360deg); transform:rotate3d(0,1,1,360deg); } }
+
+
+@-moz-keyframes spin2 { 100% { -moz-transform: rotate3d(1,1,0,-360deg); } }
+@-webkit-keyframes spin2 { 100% { -webkit-transform: rotate3d(1,1,0,-360deg); } }
+@keyframes spin2 { 100% { -webkit-transform: rotate3d(1,1,0,-360deg); transform:rotate3d(1,1,0,-360deg); } }
+
+
+@media screen and (max-width: 1030px) {
+  .box1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 50px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .box1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 50px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+
+  .wrapper {
+    /* border: 2px solid #f76707; */
+    border-radius: 5px;
+    /* background-color: #fff4e6; */
+    display: grid;
+    grid-template-columns: 50px 1fr 76px;
+
+  }
+
+  .box2 {
+    font-size: 14px;
+  }
+
+
+  .box3 {
+    font-size: 14px;
+  }
+
+
+  .rotate {
+    font-size: 16px;
+
+  }
+
+}
