@@ -71,7 +71,42 @@ $(function() {
     var $this = $('#a');
     $this.text($this.data('defaultText'));
   });
+
+  $('#menustars').hover(function() {
+    var $this = $('#main_text');
+    $('#main_text').css('display', 'block');
+    //
+    // $('#a').css('background-color', 'yellow');
+  }, function() {
+    // on mouseout, reset the background colour
+    var $this = $('#main_text');
+    $('#main_text').css('display', 'none');
+  });
+
+  $('#menustars').hover(function() {
+    var $this = $('#main_text_kr');
+    $('#main_text_kr').css('display', 'block');
+    //
+    // $('#a').css('background-color', 'yellow');
+  }, function() {
+    // on mouseout, reset the background colour
+    var $this = $('#main_text_kr');
+    $('#main_text_kr').css('display', 'none');
+  });
+
+
 });
+
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+   if(!isChrome){
+     $('#iframeAudio').remove()
+   }
+ else{
+    $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background
+ }
+
+
+
 
 //
 // $('#star1').hover(
